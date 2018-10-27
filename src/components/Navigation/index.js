@@ -11,7 +11,7 @@ const Navigation = () => {
   }
 
   function Back() {
-    const isHomepage = location.pathname === "/";
+    const isHomepage = window.location.pathname === "/";
     if (!isHomepage) {
       return <LinkBack />;
     }

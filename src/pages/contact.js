@@ -1,7 +1,7 @@
 import React from "react";
 
 const ContactPage = () => (
-  <form className="max-w-md" data-netlify="true">
+  <form className="max-w-md" action="thank-you" data-netlify="true">
     <header className="mb-8">
       <h1>Contact NeutralTone</h1>
     </header>
