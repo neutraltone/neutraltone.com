@@ -1,12 +1,11 @@
 import Link from "gatsby-link";
 import React from "react";
-import ArticleListing from "../components/ArticleListing";
 
 const IndexPage = () => (
   <article className="max-w-md leading-normal">
     <header className="mb-8">
       <h1>NeutralTone</h1>
-      <p>UI Developer</p>
+      <p>UI Development Studio</p>
     </header>
     <p className="my-4">
       NeutralTone is a Norwich based multidisciplined software engineering
@@ -24,10 +23,10 @@ const IndexPage = () => (
       <a href="mailto:hello@neutraltone.com">hello@neutraltone.com</a> or head
       over to our <Link to="/contact">contact page</Link>.
     </p>
-    <hr className="border-t my-12" />
+    {/* <hr className="border-t my-12" />
     <aside>
       <ArticleListing />
-    </aside>
+    </aside> */}
   </article>
 );
 

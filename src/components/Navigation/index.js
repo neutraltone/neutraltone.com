@@ -2,14 +2,18 @@ import Link from "gatsby-link";
 import React from "react";
 
 const Navigation = () => {
+  function LinkBack() {
+    return (
+      <Link to="/" className="text-white">
+        ⬅ Back home
+      </Link>
+    );
+  }
+
   function Back() {
-    const isHomepage = location.pathname === "/";
+    const isHomepage = window.location.pathname === "/";
     if (!isHomepage) {
-      return (
-        <Link to="/" className="text-white">
-          ⬅ Back home
-        </Link>
-      );
+      return <LinkBack />;
     }
     return null;
   }
