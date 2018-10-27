@@ -1,9 +1,7 @@
-import React from "react";
 import PropTypes from "prop-types";
+import React from "react";
 import Helmet from "react-helmet";
-
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Navigation from "../components/Navigation";
 import "./index.css";
 
 const TemplateWrapper = ({ children }) => (
@@ -15,11 +13,10 @@ const TemplateWrapper = ({ children }) => (
         { name: "keywords", content: "sample, something" }
       ]}
     />
-    <Header />
-    <div className="flex flex-col flex-1 md:justify-center max-w-xl mx-auto px-4 py-8 md:p-8 w-full">
+    <div className="flex-grow flex items-center max-w-xl mx-auto px-4 pt-8 pb-28 w-full leading-normal">
       {children()}
     </div>
-    <Footer />
+    <Navigation />
   </div>
 );
 

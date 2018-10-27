@@ -1,57 +1,82 @@
 import React from "react";
-import Link from "gatsby-link";
 
 const ContactPage = () => (
-  <form className="mx-auto md:w-1/2">
-    <p className="leading-loose mb-8">
-      Here is an example of a form built using Tailwind. Click{" "}
-      <a
-        href="https://tailwindcss.com/docs/examples/forms"
-        className="font-bold no-underline text-grey-darkest"
-      >
-        here
-      </a>{" "}
-      to see more examples.
+  <form className="max-w-md">
+    <header className="mb-8">
+      <h1>Contact NeutralTone</h1>
+    </header>
+    <p>
+      We would love to have a chat about what we can do for your business, just
+      fill out the contact form bellow or if you prefer, drop us an email at{" "}
+      <a href="mailto:hello@neutraltone.com">hello@neutraltone.com</a>.
     </p>
-
-    <label
-      className="block font-bold mb-2 text-xs uppercase"
-      htmlFor="first-name"
-    >
-      First Name
-    </label>
-    <input
-      className="appearance-none block bg-grey-lighter mb-6 p-3 rounded-md text-grey-darker w-full"
-      id="first-name"
-      type="text"
-      placeholder="Bill"
-    />
-
-    <label
-      className="block font-bold mb-2 text-xs uppercase"
-      htmlFor="last-name"
-    >
-      Last Name
-    </label>
-    <input
-      className="appearance-none block bg-grey-lighter mb-6 p-3 rounded-md text-grey-darker w-full"
-      id="last-name"
-      type="text"
-      placeholder="Murray"
-    />
-
-    <label className="block font-bold mb-2 text-xs uppercase" htmlFor="message">
-      Message
-    </label>
-    <textarea
-      className="appearance-none bg-grey-lighter mb-6 p-3 rounded-md text-grey-darker w-full"
-      placeholder="Say something..."
-      rows="8"
-    />
-
-    <button className="border-b-4 border-grey-darker hover:border-grey-dark bg-grey-dark hover:bg-grey font-bold px-6 py-3 rounded text-sm text-white">
-      Submit
-    </button>
+    <hr className="border-t my-12" />
+    <div className="mb-6">
+      <label className="block font-bold mb-2 text-sm uppercase" htmlFor="name">
+        What should we call you?
+      </label>
+      <input
+        className="appearance-none block bg-grey-lighter p-3 rounded-md text-grey-darker w-full"
+        id="name"
+        type="text"
+        placeholder="Terra Branford"
+      />
+      <span className="flex items-center mt-2 text-sm text-red italic">
+        <svg
+          className="mr-1 w-4 h-4 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z" />
+        </svg>
+        Please enter a name.
+      </span>
+    </div>
+    <div className="mb-6">
+      <label className="block font-bold mb-2 text-sm uppercase" htmlFor="name">
+        How can we contact your?
+      </label>
+      <input
+        className="appearance-none block bg-grey-lighter p-3 rounded-md text-grey-darker w-full"
+        id="name"
+        type="email"
+        placeholder="terrabranford@gmail.com"
+      />
+      <span className="flex items-center mt-2 text-sm text-red italic">
+        <svg
+          className="mr-1 w-4 h-4 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z" />
+        </svg>
+        Please enter an email address.
+      </span>
+    </div>
+    <div className="mb-6">
+      <label
+        className="block font-bold mb-2 text-sm uppercase"
+        htmlFor="message"
+      >
+        Message
+      </label>
+      <textarea
+        className="appearance-none bg-grey-lighter p-4 rounded-md text-grey-darker w-full"
+        placeholder="Say something..."
+        rows="8"
+      />
+      <span className="flex items-center mt-2 text-sm text-red italic">
+        <svg
+          className="mr-1 w-4 h-4 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z" />
+        </svg>
+        Please enter a Message.
+      </span>
+    </div>
+    <button className="px-8 py-4 bg-black text-grey-lighter">Submit</button>
   </form>
 );
 
