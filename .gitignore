@@ -9,3 +9,7 @@ yarn-error.log
 
 # macOS
 .DS_Store
+
+# VS Code
+.history
+.vscode
