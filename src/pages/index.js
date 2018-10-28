@@ -8,8 +8,8 @@ const IndexPage = () => (
       <p>UI Development Studio</p>
     </header>
     <p className="my-4">
-      NeutralTone is a Norwich based multidisciplined software engineering
-      studio ran by UI Developer{" "}
+      NeutralTone is a Norwich based multidisciplined distributed software
+      engineering team ran by UI Developer,{" "}
       <a href="https://tonyphipps.co.uk">Tony Phipps</a>.
     </p>
     <p className="my-4">
@@ -18,8 +18,8 @@ const IndexPage = () => (
       architecture.
     </p>
     <p className="my-4">
-      If you are interested to see what we can do for you business we would love
-      to have a chat, drop us an email at{" "}
+      If you are interested in seeing what we can do for you business we would
+      love to have a chat, drop us an email at{" "}
       <a href="mailto:hello@neutraltone.com">hello@neutraltone.com</a> or head
       over to our <Link to="/contact">contact page</Link>.
     </p>
