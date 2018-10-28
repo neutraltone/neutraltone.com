@@ -1,12 +1,37 @@
+import Link from "gatsby-link";
 import React from "react";
-import Taken from "../images/taken.svg";
 
 const NotFoundPage = () => (
-  <div>
-    <img src={Taken} className="block mx-auto w-1/2" />
-    <h2 className="bg-yellow inline-block my-8 p-3">
-      Looks like this page is a ghost that got abducted by aliens...
-    </h2>
+  <div className="max-w-md">
+    <header className="mb-8">
+      <h1>404 Page Not Found</h1>
+    </header>
+    <p>
+      It appears the that the page you are looking has been lost to the void. If
+      you are looking to contact us, please head over to the{" "}
+      <Link to="/contact" className="no-underline">
+        contact page
+      </Link>
+      . Otherwise, choose from one of the links below.
+    </p>
+    <hr className="border-t my-12" />
+    <ul>
+      <li>
+        <Link to="/" className="no-underline">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link to="/articles" className="no-underline">
+          Articles
+        </Link>
+      </li>
+      <li>
+        <Link to="/contact" className="no-underline">
+          Contact
+        </Link>
+      </li>
+    </ul>
   </div>
 );
 

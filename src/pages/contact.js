@@ -21,7 +21,7 @@ const ContactPage = () => (
         name="name"
         type="text"
         placeholder="Terra Branford"
-        requred
+        required
       />
       {/* <span className="flex items-center mt-2 text-sm text-red italic">
         <svg
