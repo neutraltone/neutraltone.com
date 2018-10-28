@@ -1,7 +1,8 @@
 import Link from "gatsby-link";
 import React from "react";
+import { withRouter } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = props => {
   function LinkBack() {
     return (
       <Link to="/" className="text-white">
@@ -11,11 +12,7 @@ const Navigation = () => {
   }
 
   function Back() {
-    const isHomepage = window.location.pathname === "/";
-    if (!isHomepage) {
-      return <LinkBack />;
-    }
-    return null;
+    return props.location.pathname === "/" ? <LinkBack /> : null;
   }
 
   return (
@@ -39,4 +36,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default withRouter(Navigation);
