@@ -44,7 +44,7 @@ const ContactPage = () => (
         name="email"
         type="email"
         placeholder="terrabranford@gmail.com"
-        requred
+        required
       />
       {/* <span className="flex items-center mt-2 text-sm text-red italic">
         <svg
@@ -68,7 +68,7 @@ const ContactPage = () => (
         className="appearance-none bg-grey-lighter p-4 rounded-md text-grey-darker w-full"
         placeholder="Say something..."
         rows="8"
-        requred
+        required
       />
       {/* <span className="flex items-center mt-2 text-sm text-red italic">
         <svg
