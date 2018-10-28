@@ -18,7 +18,7 @@ const IndexPage = () => (
       architecture.
     </p>
     <p className="my-4">
-      If you are interested in seeing what we can do for you business we would
+      If you are interested in seeing what we can do for your business we would
       love to have a chat, drop us an email at{" "}
       <a href="mailto:hello@neutraltone.com">hello@neutraltone.com</a> or head
       over to our <Link to="/contact">contact page</Link>.
