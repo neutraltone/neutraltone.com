@@ -9,8 +9,11 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="NeutralTone | UI Development Studio"
       meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" }
+        {
+          name: "description",
+          content:
+            "NeutralTone is a Norwich based multidisciplined distributed software engineering team."
+        }
       ]}
       link={[
         {
