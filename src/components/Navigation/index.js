@@ -1,20 +1,9 @@
 import Link from "gatsby-link";
 import React from "react";
 import { withRouter } from "react-router-dom";
+import Back from "./Back";
 
 const Navigation = props => {
-  function LinkBack() {
-    return (
-      <Link to="/" className="text-white">
-        ⬅ Back home
-      </Link>
-    );
-  }
-
-  function Back() {
-    return props.location.pathname === "/" ? <LinkBack /> : null;
-  }
-
   return (
     <div className="fixed pin-x pin-b bg-black">
       <nav className="flex justify-between max-w-xl mx-auto p-4 md:py-8 text-sm">
@@ -30,7 +19,7 @@ const Navigation = props => {
             </Link>
           </li>
         </ul>
-        <Back />
+        {props.location.pathname !== "/" && <Back />}
       </nav>
     </div>
   );
