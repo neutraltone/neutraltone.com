@@ -15,7 +15,7 @@ const Navigation = props => {
             </Link>
           </li>
           */}
-          <li>
+          <li className="px-4">
             <Link to="/contact" className="no-underline text-white">
               Contact
             </Link>
