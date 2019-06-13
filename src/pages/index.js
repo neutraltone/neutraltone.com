@@ -9,7 +9,7 @@ const IndexPage = () => (
     </header>
     <p className="my-4">
       NeutralTone is a Norwich based multidiscipline distributed software
-      engineering team ran by UI Developer,{" "}
+      engineering team run by UI Developer,{" "}
       <a href="https://tonyphipps.co.uk">Tony Phipps</a>.
     </p>
     <p className="my-4">
