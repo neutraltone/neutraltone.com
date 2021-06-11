@@ -2,36 +2,38 @@ import React from "react";
 
 const ContactPage = () => (
   <form
-    className="max-w-md"
     name="contact"
-    action="thank-you"
     method="POST"
-    netlify
+    action="/thank-you"
+    data-netlify="true"
+    className="max-w-md"
   >
     <header className="mb-8">
       <h1>Contact NeutralTone</h1>
     </header>
     <p>
       We would love to have a chat about what we can do for your business, just
-      fill out the contact form bellow or if you prefer, drop us an email at{" "}
+      fill out the contact form below or if you prefer, drop us an email at{" "}
       <a href="mailto:hello@neutraltone.com">hello@neutraltone.com</a>.
     </p>
-    <hr className="border-t my-12" />
+    <hr className="my-12 border-t" />
+    <input type="hidden" name="bot-field" />
+    <input type="hidden" name="form-name" value="contact" />
     <div className="mb-6">
-      <label className="block font-bold mb-2 text-sm uppercase" htmlFor="name">
+      <label className="block mb-2 text-sm font-bold uppercase" htmlFor="name">
         What should we call you?
       </label>
       <input
-        className="appearance-none block bg-grey-lighter p-3 rounded-md text-grey-darker w-full"
+        className="block w-full p-3 rounded-md appearance-none bg-grey-lighter text-grey-darker"
         id="name"
         name="name"
         type="text"
         placeholder="Terra Branford"
         required
       />
-      {/* <span className="flex items-center mt-2 text-sm text-red italic">
+      {/* <span className="flex items-center mt-2 text-sm italic text-red">
         <svg
-          className="mr-1 w-4 h-4 fill-current"
+          className="w-4 h-4 mr-1 fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
         >
@@ -41,20 +43,20 @@ const ContactPage = () => (
       </span> */}
     </div>
     <div className="mb-6">
-      <label className="block font-bold mb-2 text-sm uppercase" htmlFor="name">
+      <label className="block mb-2 text-sm font-bold uppercase" htmlFor="name">
         What is your email address?
       </label>
       <input
-        className="appearance-none block bg-grey-lighter p-3 rounded-md text-grey-darker w-full"
+        className="block w-full p-3 rounded-md appearance-none bg-grey-lighter text-grey-darker"
         id="email"
         name="email"
         type="email"
         placeholder="terrabranford@gmail.com"
         required
       />
-      {/* <span className="flex items-center mt-2 text-sm text-red italic">
+      {/* <span className="flex items-center mt-2 text-sm italic text-red">
         <svg
-          className="mr-1 w-4 h-4 fill-current"
+          className="w-4 h-4 mr-1 fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
         >
@@ -65,20 +67,20 @@ const ContactPage = () => (
     </div>
     <div className="mb-6">
       <label
-        className="block font-bold mb-2 text-sm uppercase"
+        className="block mb-2 text-sm font-bold uppercase"
         htmlFor="message"
       >
         Message
       </label>
       <textarea
-        className="appearance-none bg-grey-lighter p-4 rounded-md text-grey-darker w-full"
+        className="w-full p-4 rounded-md appearance-none bg-grey-lighter text-grey-darker"
         placeholder="Say something..."
         rows="8"
         required
       />
-      {/* <span className="flex items-center mt-2 text-sm text-red italic">
+      {/* <span className="flex items-center mt-2 text-sm italic text-red">
         <svg
-          className="mr-1 w-4 h-4 fill-current"
+          className="w-4 h-4 mr-1 fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
         >

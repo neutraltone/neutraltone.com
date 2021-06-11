@@ -14,18 +14,18 @@ const NotFoundPage = () => (
       </Link>
       . Otherwise, choose from one of the links below.
     </p>
-    <hr className="border-t my-12" />
+    <hr className="my-12 border-t" />
     <ul>
       <li>
         <Link to="/" className="no-underline">
           Home
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link to="/articles" className="no-underline">
           Articles
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link to="/contact" className="no-underline">
           Contact
